@@ -30,21 +30,30 @@ graph TD
 ---
 
 ## 📸 Screenshots Section
-🖥️ Landing Page
-Landing Page
 
-👤 Signup Page
-Signup Page
+### 🖥️ Landing Page
+* [Landing Page - Hero View](Screenshots/Landing_page/Screenshot%202026-06-14%20115125.png)
+* [Landing Page - Features Section](Screenshots/Landing_page/Screenshot%202026-06-14%20115146.png)
+* [Landing Page - Stats Section](Screenshots/Landing_page/Screenshot%202026-06-14%20115158.png)
+* [Landing Page - Footer & Contact](Screenshots/Landing_page/Screenshot%202026-06-14%20115208.png)
 
-🔑 Login Page
-Login Page
+### 👤 Signup Page
+* [Account Registration View](Screenshots/Sign%20up/Screenshot%202026-06-14%20115226.png)
 
-📊 Dashboard
-Dashboard
+### 🔑 Login Page
+* [User Authorization View](Screenshots/login%20page/Screenshot%202026-06-14%20115315.png)
 
-📱 Mobile View
-Mobile View
+### 📊 Dashboard
+* [Dashboard Manager Overview](Screenshots/User%20DashBoard/Screenshot%202026-06-14%20115400.png)
+* [Advanced Options Panel](Screenshots/User%20DashBoard/Screenshot%202026-06-14%20115414.png)
 
+### 📱 Mobile View
+* [Mobile Dashboard View 1](Screenshots/Mobile_interface/mobile_interface_dashboard01.jpeg)
+* [Mobile Dashboard View 2](Screenshots/Mobile_interface/MI_DB_02.jpeg)
+
+### 🗄️ Database Entries
+* [MongoDB Collections Snapshot 1](Screenshots/Database/Screenshot%202026-06-14%20115505.png)
+* [MongoDB Collections Snapshot 2](Screenshots/Database/Screenshot%202026-06-14%20115539.png)
 
 
 ## 📋 Comprehensive Capabilities
