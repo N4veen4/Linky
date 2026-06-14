@@ -68,12 +68,10 @@ The following diagram illustrates how requests flow from clients through Vercel 
 
 ```mermaid
 graph TD
-    User([End User / Client]) -->|1. Opens App| Frontend[Vercel Frontend: linky-urls.vercel.app]
-    User -->|2. Clicks Short Link| Backend[Vercel Backend: backend-one-mu-11.vercel.app]
-    
-    Frontend -->|API Requests| Backend
-    Backend -->|Queries & Saves Links| DB[(MongoDB Atlas Cloud Database)]
-    Backend -->|Decodes IPs / User Agents| GeoIP[GeoIP / UAParser Middleware]
+    Client[React SPA - linky-urls.vercel.app] <-->|REST API + JWT| Backend[Express API - backend-one-mu-11.vercel.app]
+    Backend <-->|Mongoose ODM| DB[(MongoDB Atlas)]
+    ClientRedirect[Browser Redirect] -->|GET /:shortCode| Backend
+    Backend -->|Collect Metadata & Redirect| LongURL[Target Destination URL]
 ```
 
 ---
