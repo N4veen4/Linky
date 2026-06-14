@@ -6,7 +6,7 @@ Linky is a high-performance MERN-stack URL shortening platform built for the **K
 
 ## 🚀 Active Deployments
 - **Web Interface (Vercel):** [https://linky-urls.vercel.app](https://linky-urls.vercel.app)
-- **API Server & Redirector (Vercel):** [https://backend-one-mu-11.vercel.app](https://backend-one-mu-11.vercel.app)
+- **API Server & Redirector (Vercel):** [https://linky-hn.vercel.app](https://linky-hn.vercel.app)
 
 ---
 
@@ -21,7 +21,7 @@ Linky is a high-performance MERN-stack URL shortening platform built for the **K
 
 ```mermaid
 graph TD
-    Client[React SPA - linky-urls.vercel.app] <-->|REST API + JWT Auth| Server[Express Server - backend-one-mu-11.vercel.app]
+    Client[React SPA - linky-urls.vercel.app] <-->|REST API + JWT Auth| Server[Express Server - linky-hn.vercel.app]
     Server <-->|Mongoose ODM| Atlas[(MongoDB Atlas Cloud)]
     Redirector[Redirect Request: GET /:shortCode] --> Server
     Server -->|Parse Metadata & Geolocation| Destination[Target Long URL Destination]
@@ -182,7 +182,7 @@ PORT=5000
 MONGODB_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/url_shortener?retryWrites=true&w=majority
 JWT_SECRET=your_jwt_signing_secret_key_development_only_123
 JWT_EXPIRES_IN=7d
-BASE_URL=https://backend-one-mu-11.vercel.app
+BASE_URL=https://linky-hn.vercel.app
 NODE_ENV=production
 FRONTEND_URL=https://linky-urls.vercel.app
 GOOGLE_CLIENT_ID=your_google_client_id_here
@@ -190,7 +190,7 @@ GOOGLE_CLIENT_ID=your_google_client_id_here
 
 ### Frontend Setup (`frontend/.env`)
 ```env
-VITE_API_URL=https://backend-one-mu-11.vercel.app/api
+VITE_API_URL=https://linky-hn.vercel.app/api
 VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
 ```
 
