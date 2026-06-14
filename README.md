@@ -13,7 +13,7 @@ Linky is a high-performance MERN-stack URL shortening platform built for the **K
 ## 🎥 Demonstration Video
 > [!IMPORTANT]
 > The explanatory video demonstrating the application setup, bulk uploading, and analytics flows can be accessed below.
-- **Walkthrough Video Link:** [Insert Video Link Here]
+- **Walkthrough Video Link:** [Linky Demonstration & Walkthrough Video (MP4)](Screenshots/Explain_video/VN20260614_130515.mp4)
 
 ---
 
