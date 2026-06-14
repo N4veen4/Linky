@@ -10,7 +10,7 @@ import {
   LogOut,
   ChevronRight,
 } from 'lucide-react';
-import logoL from '../assets/Linky_L-removebg-preview.png';
+import logoL from '../assets/Linky L.png';
 
 /**
  * SettingsSidebar — Left sliding settings panel.

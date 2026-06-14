@@ -25,7 +25,7 @@ import Auth from './components/Auth';
 import Dashboard from './components/Dashboard';
 import AnalyticsView from './components/AnalyticsView';
 import { api } from './utils/api';
-import logoL from './assets/Linky_L-removebg-preview.png';
+import logoL from './assets/Linky L.png';
 
 export default function App() {
   const [user, setUser]                 = useState(null);

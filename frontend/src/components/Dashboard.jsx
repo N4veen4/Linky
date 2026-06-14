@@ -22,7 +22,7 @@ import { api } from '../utils/api';
 import QRCodeModal from './QRCodeModal';
 import BulkUpload from './BulkUpload';
 import SettingsSidebar from './SettingsSidebar';
-import logoL from '../assets/Linky_L-removebg-preview.png';
+import logoL from '../assets/Linky L.png';
 
 export default function Dashboard({ user, onLogout, showToast, onViewAnalytics }) {
   const [urls, setUrls] = useState([]);
