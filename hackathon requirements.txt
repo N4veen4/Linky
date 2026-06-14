@@ -1,0 +1,89 @@
+Hackathon Task: URL Shortener with Analytics 
+Problem Statement 
+Build a full-stack URL Shortener application where users can create short links for long URLs and 
+track basic analytics such as click count, creation date, and recent visits. The platform should 
+allow authenticated users to manage their links and view performance insights. The goal is to test 
+practical full-stack engineering skills including routing, database modeling, API creation, analytics 
+tracking, and frontend dashboard development. 
+Mandatory Features 
+Authentication 
+● User signup and login 
+● Protected dashboard routes 
+● Each user should only manage their own shortened URLs 
+URL Shortening 
+● User can submit a long URL and generate a short URL 
+● Generated short code should be unique 
+● Clicking the short URL should redirect to the original URL 
+● Validate that input is a proper URL before shortening 
+User Dashboard 
+● View all created short URLs 
+● Show: 
+○ Original URL 
+○ Short URL 
+○ Created date 
+○ Total clicks 
+● Ability to delete a shortened URL 
+● Ability to copy short URL easily from UI 
+Analytics 
+● Count number of clicks per short URL 
+● Record timestamp of each visit 
+● Show analytics page/details for each shortened URL 
+● Display at least: 
+○ Total click count 
+○ Last visited time 
+○ Recent visit history 
+UI Requirements 
+● Responsive interface 
+● Clean dashboard layout 
+● Proper loading, success, and error states 
+● Form validation messages 
+Bonus Features 
+Custom alias for short URL 
+● QR code generation for each short URL 
+● Expiry date for links 
+● Geolocation or device/browser analytics 
+● Charts for daily click trends 
+● Public stats page 
+● Edit destination URL 
+● Bulk URL shortening via CSV 
+● Deployment with live demo 
+Tech Constraints 
+● Frontend: React 
+● Backend: Node.js (Express / Nest JS) 
+● Database: MongoDB or PostgreSQL 
+● Use REST APIs 
+● Use server-side redirect handling 
+● Use environment variables for configuration 
+● Passwords must be hashed 
+● Analytics data should be stored in the database 
+● Proper backend validation is mandatory 
+● Do not use an external URL shortening service as the core logic 
+● UI libraries are allowed if documented 
+Evaluation Instructions 
+● Use AI code generation tools to write clean, modular JS code 
+● Good looking user interfaces will be valued highly 
+● Follow proper AI app building workflow to build the complete application and have clear 
+documentation of the steps like below: 
+○ Planning the app 
+○ Listing and documenting all the features that the app will perform 
+● Include a README.md file with: 
+○ Setup instructions. 
+○ Assumptions made. 
+○ AI Planning document and Architecture diagram of your application. 
+○ A Loom or YouTube video link explaining and demonstrating your application. (If 
+you don’t submit an explanatory video, your submission will not be 
+reviewed) 
+○ Add a line “This project is a part of a hackathon run by https://katomaran.com ” in 
+your README.md file’s bottom 
+● Submit your github repository in the google form before 12 PM on Sunday, June 14th, 
+2026 
+● Please ensure that there are no repeated submissions 
+● Include sample output from the video file: logs, images, and DB entries. 
+● Usage of AI tools is encouraged but you must completely understand your generated 
+code. The prompts you used will be evaluated during the interview, so please be 
+prepared accordingly. 
+● You will be asked to run the code and explain the application in your final round of 
+interview 
+● Although we would recommend everyone to follow the instructions above, you may 
+decide to ignore a few for an innovative reason, but you must ensure your submission is 
+good so you get a chance in the next round to explain it to us.
