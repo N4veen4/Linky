@@ -1,73 +1,104 @@
-# Linky
+# Linky – Smart URL Shortener
 
-Linky is a high-performance URL shortening application built for the **Katomaran Hackathon 2026**. It allows users to quickly convert long URLs into custom, trackable short links.
+Linky is a high-performance, responsive URL shortening application built for the **Katomaran Hackathon 2026**. It converts long, complicated URLs into short, trackable links with detailed real-time traffic insights.
 
-## Video Demonstration
-[Insert Video Link Here]
+---
 
-## Features
-- **URL Shortening:** Instantly convert long URLs into concise aliases.
-- **Custom Aliases:** Personalize your shortened links.
-- **Advanced Analytics:** Track total clicks, unique visitors, browser details, devices, referrers, and country-level demographics.
-- **Bulk CSV Upload:** Shorten up to 50 URLs at once via a simple CSV upload.
-- **Security & Reliability:** JWT-based authentication, rate limiting, and CORS protection.
-- **Themes:** Fully responsive application with seamless Light and Dark mode transition.
+## 🚀 Live Demo
 
-## Architecture
+* **Frontend App:** [https://linky-urls.vercel.app](https://linky-urls.vercel.app)
+* **Backend API Server:** [https://backend-one-mu-11.vercel.app](https://backend-one-mu-11.vercel.app)
 
-Linky is built using a modern MERN-stack architecture.
+---
 
-**Frontend:**
-- **React.js & Vite:** A fast, interactive single-page application.
-- **Tailwind CSS & Global CSS Variables:** Flexible, responsive styling system featuring light/dark mode toggling.
-- **Recharts:** Clean, responsive analytics visualization.
+## ✨ Features
 
-**Backend:**
-- **Node.js & Express.js:** Efficient RESTful API server.
-- **MongoDB & Mongoose:** Scalable NoSQL database for structured storage.
-- **UAParser & GeoIP:** Advanced traffic parsing for granular click metrics.
+- **Instant URL Shortening:** Quick conversion of long links to short aliases.
+- **Custom Branded Aliases:** Personalize your shortened links.
+- **Real-Time Traffic Analytics:**
+  - Click timelines and unique visitor counts.
+  - Geo-demographics (countries).
+  - Referrers, browser details, and device distributions.
+- **Bulk CSV Upload:** Shorten up to 50 URLs at once via a simple CSV interface.
+- **Privacy Controls:** Toggle between public and private analytics for individual links.
+- **Expiry Control:** Set automatic expiration dates on short links.
+- **QR Code Generation:** Auto-generates scannable QR codes for your short URLs.
+- **Aesthetic Dark & Light Themes:** Premium design with interactive micro-animations.
 
-## Setup Instructions
+---
 
-### Prerequisites
-- Node.js (v18 or higher)
-- MongoDB
+## 🛠 Tech Stack & Architecture
 
-### 1. Clone the repository
-```bash
-git clone <repository_url>
-cd URL_SHORTER
+Linky uses a robust MERN architecture designed to run seamlessly on the cloud:
+
+* **Frontend:** React, Vite, Framer Motion, GSAP, Tailwind CSS, Recharts.
+* **Backend:** Node.js, Express.js, Mongoose, UAParser, GeoIP, Express-Rate-Limit.
+* **Database:** MongoDB (local for development, MongoDB Atlas for production).
+* **Hosting:** Vercel (both Frontend and Backend as Serverless Functions).
+
+---
+
+## 🔧 Environment Variables
+
+### Backend Configuration
+Create a `.env` file inside the `backend/` folder:
+```env
+PORT=5000
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/url_shortener?retryWrites=true&w=majority
+JWT_SECRET=your_jwt_secret_key
+JWT_EXPIRES_IN=7d
+BASE_URL=https://backend-one-mu-11.vercel.app
+NODE_ENV=production
+FRONTEND_URL=https://linky-urls.vercel.app
+GOOGLE_CLIENT_ID=your_google_client_id
 ```
 
-### 2. Backend Setup
+### Frontend Configuration
+Create a `.env` file inside the `frontend/` folder:
+```env
+VITE_API_URL=https://backend-one-mu-11.vercel.app/api
+VITE_GOOGLE_CLIENT_ID=your_google_client_id
+```
+
+---
+
+## 🖥 Local Installation & Development
+
+### Prerequisites
+* Node.js (v18+)
+* MongoDB running locally
+
+### 1. Backend Setup
 ```bash
 cd backend
 npm install
-```
-Create a `.env` file in the `backend` directory with the following variables:
-```
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-FRONTEND_URL=http://localhost:5173
-```
-Start the backend server:
-```bash
 npm run dev
 ```
 
-### 3. Frontend Setup
+### 2. Frontend Setup
 ```bash
-cd frontend
+cd ../frontend
 npm install
-```
-Start the Vite development server:
-```bash
 npm run dev
 ```
+Navigate to `http://localhost:5173`.
 
-### 4. Open Application
-Navigate to `http://localhost:5173` in your browser.
+---
 
-## Credits
-This project was specifically designed and developed for the **Katomaran Hackathon 2026**. All intellectual property aligns with the respective constraints and rules of the hackathon.
+## ☁️ Production Deployment on Vercel
+
+The application is deployed using the Vercel CLI.
+
+### Deploying the Backend
+1. Make sure all backend environment variables are added in your Vercel Dashboard settings.
+2. Run in the `backend` folder:
+   ```bash
+   vercel --prod
+   ```
+
+### Deploying the Frontend
+1. Configure `VITE_API_URL` pointing to the deployed backend API URL in Vercel settings.
+2. Run in the `frontend` folder:
+   ```bash
+   vercel --prod
+   ```
