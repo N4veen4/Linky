@@ -30,17 +30,22 @@ graph TD
 ---
 
 ## 📸 Screenshots Section
+🖥️ Landing Page
+Landing Page
 
-### 🖥️ Marketing Landing Page
-![Landing Page](frontpage%20refference/Screenshot%202026-06-13%20173044.png)
+👤 Signup Page
+Signup Page
 
-### 📊 Link Manager & Dashboard
-![Dashboard Page](frontpage%20refference/Screenshot%202026-06-13%20173107.png)
+🔑 Login Page
+Login Page
 
-### 📈 Intelligent Traffic Analytics
-![Analytics Page](frontpage%20refference/Screenshot%202026-06-13%20173141.png)
+📊 Dashboard
+Dashboard
 
----
+📱 Mobile View
+Mobile View
+
+
 
 ## 📋 Comprehensive Capabilities
 
